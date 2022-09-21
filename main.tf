@@ -10,13 +10,13 @@ resource "aws_instance" "aws_ec_instance" {
     type="ssh"
     user = "ubuntu"
     host=self.public_ip
-    private_key=file("/home/runner/work/ec2_terraform_config_remote_exec/ec2_terraform_config_remote_exec/prv_key.ppk")
+    private_key=file("/home/runner/work/ec2_terraf_remote_exec1/ec2_terraf_remote_exec1/prv_key.ppk")
     #agent = true
     timeout = "4m"
   }
 
   provisioner "file" {
-    source      = "/home/runner/work/ec2_terraform_config_remote_exec/ec2_terraform_config_remote_exec/install_python.sh"
+    source      = "/home/runner/work/ec2_terraf_remote_exec1/ec2_terraf_remote_exec1/install_python.sh"
     destination = "/tmp/install_python.sh"
   }
   
