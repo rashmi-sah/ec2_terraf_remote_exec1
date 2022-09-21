@@ -1,4 +1,6 @@
-	echo "############ Installing pip ###########################"
+	echo "##### Installing updates ########"
+	sudo apt-get update
+	echo "############ Installing python ###########################"
 	echo "################ /n/n/n/n/n/n/n/n/n/n/################"
 	sudo apt install -y python3
 	echo "################ /n/n/n/n/n/n/n/n/n/n/################"
